@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import {Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import FeaturedProducts from "../components/FeaturedProducts";
 import PromoBanner from "../components/PromoBanner";
 import Footer from "../components/Footer";
@@ -17,20 +17,20 @@ function Home() {
           Unbeatable offers on top-rated products. Don't miss out!
         </h1>
         <ScrollLink
-          to="featured"
+          to="/products"
           smooth={true}
           offset={-70}
           duration={500}
           className="cursor-pointer"
         >
           <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-md px-4 py-2 flex items-center">
-          Shop Now
-        </button>
+            Shop Now
+          </button>
         </ScrollLink>
       </div>
-      <FeaturedProducts/>
-      <PromoBanner/>
-      <Footer/>
+      <FeaturedProducts />
+      <PromoBanner />
+      <Footer />
     </div>
   );
 }
